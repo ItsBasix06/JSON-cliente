@@ -7,12 +7,38 @@
 </head>
 <body>
     <h1>Datos del cliente</h1>
+    <p><label for="nombre">Nombre:</label><input type="text" id="nombre"></p>
+    <p><label for="apellidos">Apellidos:</label><input type="text" id="apellidos"></p>
+    <p><label for="suscrito">Suscrito:</label>
+        <input type="checkbox" id="suscrito"></p>
+        <fieldset>
+    <p><label for="calle">Calle:</label><input type="text" id="calle"></p>
+    <p><label for="numero">Numero:</label><input type="text" id="numero"></p>
+    <p><label for="poblacion">Poblacion:</label><input type="text" id="poblacion"></p>
+        </fieldset>
+    <p><label for="aficiones">Aficciones: </label>
+        <select name="aficiones" id="aficiones"></select>
+    </p>
     <script>
         
         
         fetch('cliente.json')
-        .then(response => response.json())
-        .then(cliente => alert(cliente.nombre));
+        .then(respuesta => respuesta.json())
+        .then(cliente => {
+            document.getElementById("nombre").value = cliente.nombre;
+            document.getElementById("apellidos").value = cliente.apellidos
+            if (cliente.suscrito){
+                document.getElementById("suscrito").setAttribute("checked","checked")
+            }
+            document.getElementById("calle").value=cliente.direccion.calle
+            document.getElementById("numero").value=cliente.direccion.número
+            document.getElementById("poblacion").value=cliente.direccion.poblacion
+            for ( aficion of cliente.aficiones){
+               let miOpcion = document.createElement("option");
+               miOpcion.innerHTML = aficion;
+                document.getElementById("aficiones").appendChild(miOpcion);
+            }
+        });
     </script>
 </body>
 </html>
