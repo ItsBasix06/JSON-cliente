@@ -1,0 +1,34 @@
+{
+    "pedido": {
+      "num-ped": 1024,
+      "fec-ped": "2025-05-08",
+      "hora-ped": "18:45:32",
+      "usuario": {
+        "nombre-usuario": "basi123",
+        "nombre-completo": "Basi González",
+        "direccion-envio": {
+          "calle": "Calle Mayor 15",
+          "poblacion": "Toledo",
+          "codigo-postal": "45001"
+        }
+      },
+      "articulos": [
+        {
+          "codigo": "A1001",
+          "descripcion": "Camiseta algodón talla M",
+          "precio": 19.99
+        },
+        {
+          "codigo": "A2045",
+          "descripcion": "Pantalón vaquero slim fit",
+          "precio": 39.95
+        },
+        {
+          "codigo": "A3123",
+          "descripcion": "Zapatillas deportivas unisex",
+          "precio": 59.90
+        }
+      ]
+    }
+  }
+  

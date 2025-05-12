@@ -1,0 +1,81 @@
+{
+    "facturas": [
+      {
+        "cliente": {
+          "idCliente": "C001",
+          "nombre": "Laura",
+          "apellido1": "Gómez",
+          "apellido2": "Martínez",
+          "dni": "12345678A",
+          "telefonos": ["600123456", "912345678"]
+        },
+        "ticket": {
+          "alquileres": {
+            "fechaDevolucion": "2025-05-12",
+            "peliculas": [
+              {
+                "idPelicula": "P001",
+                "titulo": "La Aventura Espacial",
+                "genero": "Ciencia Ficción",
+                "duracion": 120,
+                "actores": [
+                  {
+                    "nombre": "Carlos",
+                    "apellido": "Santos"
+                  },
+                  {
+                    "nombre": "María",
+                    "apellido": "López"
+                  }
+                ],
+                "valoracion": 4.5,
+                "caratula": "aventura_espacial.jpg"
+              },
+              {
+                "idPelicula": "P002",
+                "titulo": "El Misterio del Bosque",
+                "genero": "Suspense",
+                "duracion": 95,
+                "actores": [
+                  {
+                    "nombre": "Jorge",
+                    "apellido": "Ramírez"
+                  },
+                  {
+                    "nombre": "Lucía",
+                    "apellido": "Fernández"
+                  }
+                ],
+                "valoracion": 4.2
+              }
+            ]
+          },
+          "formaPago": "Tarjeta",
+          "importeTotal": 6.50
+        }
+      },
+      {
+        "cliente": {
+          "idCliente": "C002",
+          "nombre": "Miguel",
+          "apellido1": "Ruiz",
+          "apellido2": "Navarro",
+          "dni": "87654321B",
+          "telefonos": ["699876543"]
+        },
+        "ticket": {
+          "compras": {
+            "tipo": "DVD",
+            "dvd": {
+              "titulo": "Historias de la Tierra",
+              "fechaSalida": "2024-11-15",
+              "extras": true
+            }
+          },
+          "formaPago": "Efectivo",
+          "importeTotal": 12.90
+        }
+      }
+    ]
+  }
+  

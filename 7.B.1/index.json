@@ -1,0 +1,32 @@
+{
+    "personas" : [{
+  "nombre" : "Juan Pardo",
+  "nacimiento" :{
+    "dia": "10",
+    "mes" : "abril",
+    "anyo" : "1982"
+  },
+  "direccion" : {
+    "calle" : "Caoba,1",
+    "poblacion" : "Madrid",
+    "provincia" : "Madrid",
+    "cpostal" : "28005"
+  },
+  "varon" : true
+},
+{
+    "nombre" : "Juan Pardo",
+  "nacimiento" :{
+    "dia": "10",
+    "mes" : "abril",
+    "anyo" : "1982"
+  },
+  "direccion" : {
+    "calle" : "Caoba,1",
+    "poblacion" : "Madrid",
+    "provincia" : "Madrid",
+    "cpostal" : "28005"
+  },
+  "varon" : true
+}]
+}

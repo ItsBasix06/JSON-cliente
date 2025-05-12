@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alumno = {
+            nombre: "Juan",
+            apellidos: "López Aguirre",
+            edad: 54,
+            empleado : true,
+            aficiones : ["leer","ciclismo","paracaidismo"],
+            direccion : {
+                calle: "Norte",
+                numero:23,
+                bajo: true
+            },
+            asignaturas : [
+                {asignatura:"Lenguaje de marcas",
+                    nota:8,
+                    profesor: "Jose Luis"
+                },
+                {asignatura:"Programacion",
+                    nota:8,
+                    profesor: "Ángel vela"
+                }
+            ]
+        }
+    
+        for ( asignatura of alumno.asignaturas){
+        alert (asignatura.asignatura + " Nota: "+ asignatura.nota);
+        }
+    </script>
+</body>
+</html>

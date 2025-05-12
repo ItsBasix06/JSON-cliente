@@ -1,0 +1,61 @@
+{
+    "concesionarios": [
+      {
+        "nombre": "AutoCentro Madrid",
+        "direccion": "Avenida de América, 45",
+        "localidad": "Madrid",
+        "telefonos": ["911234567", "912345678"],
+        "vehiculos": [
+          {
+            "matricula": "1234ABC",
+            "tipo": "turismo",
+            "modelo": "Seat Ibiza",
+            "cilindrada": 1200,
+            "combustible": "Gasolina",
+            "color": "Rojo",
+            "asegurado": true
+          },
+          {
+            "matricula": "5678DEF",
+            "tipo": "furgoneta",
+            "modelo": "Renault Kangoo",
+            "cilindrada": 1600,
+            "combustible": "Diesel",
+            "color": "Blanco"
+          }
+        ]
+      },
+      {
+        "nombre": "MotorValencia",
+        "direccion": "Calle del Motor, 12",
+        "localidad": "Valencia",
+        "telefonos": ["963214785"],
+        "vehiculos": [
+          {
+            "matricula": "9876GHI",
+            "modelo": "Peugeot 208",
+            "cilindrada": 1300,
+            "combustible": "Gasolina",
+            "color": "Negro",
+            "asegurado": false
+          },
+          {
+            "matricula": "2468JKL",
+            "tipo": "furgoneta",
+            "modelo": "Citroën Berlingo",
+            "cilindrada": 1700,
+            "combustible": "Diesel",
+            "color": "Gris"
+          },
+          {
+            "matricula": "1357MNO",
+            "modelo": "Volkswagen Golf",
+            "cilindrada": 1400,
+            "combustible": "Gasolina",
+            "color": "Azul"
+          }
+        ]
+      }
+    ]
+  }
+  
