@@ -1,0 +1,6 @@
+{
+    "regiones" :
+    [{"nombre": "Castilla-La Mancha","archivo" : "CLM.json"},
+     {"nombre" : "Valencia", "archivo" : "valencia.json"}
+]
+}

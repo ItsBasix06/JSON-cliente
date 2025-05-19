@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Provincias y Regiones de España</h1>
+    <select name="regiones" id="regiones" onchange="cargaProvincias()">
+        
+    </select>
+    <select name="provincias" id="provincias">
+
+    </select>
+    <script>
+        fetch("regiones.json")
+        .then(response=>response.json())
+        .then(objeto=>
+            {
+                let opcionRegion = null;
+                for ( region of objeto.regiones){
+                    opcionRegion = document.createElement("option");
+                    opcionRegion.innerHTML = region.nombre;
+                    opcionRegion.value = region.archivo
+                    document.getElementById("regiones").appendChild(opcionRegion)
+                }
+            })
+            function cargaProvincias(){
+                let archivo = document.getElementById("regiones").value;
+            fetch(archivo)
+                .then(response => response.json())
+                .then(data => {
+                    let provinciasSelect = document.getElementById("provincias");
+                    document.getElementById("provincias").innerHTML = "";
+
+                    for (let provincia of data.provincias) {
+                        let opcionProvincia = document.createElement("option");
+                        opcionProvincia.innerHTML = provincia;
+                        document.getElementById("provincias").appendChild(opcionProvincia);
+                    }
+                });
+            }
+    </script>
+</body>
+</html>
