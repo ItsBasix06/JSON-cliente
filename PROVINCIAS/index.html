@@ -30,9 +30,10 @@
                 let archivo = document.getElementById("regiones").value;
             fetch(archivo)
                 .then(response => response.json())
+                
                 .then(data => {
                     let provinciasSelect = document.getElementById("provincias");
-                    document.getElementById("provincias").innerHTML = "";
+                    document.getElementById("provincias").innerHTML = ""; 
 
                     for (let provincia of data.provincias) {
                         let opcionProvincia = document.createElement("option");
